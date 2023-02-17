@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+}
+@font-face {
+    font-family: ComicNeue;
+    src: url(ComicNeue-Bold.ttf);
+}
+body{
+    font-family: ComicNeue;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 3px solid black;
+    width: 160px;
+    height: 20px;
+}
+.box__loading{
+    height: 100%;
+    width: 100%;
+    animation: loading 5s;
+    background-color: yellowgreen;
+}
+@keyframes loading{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 160px;
+    }
+}
+h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+p{
+    font-size: 1.3em;
+    font-weight: bold;
+}
